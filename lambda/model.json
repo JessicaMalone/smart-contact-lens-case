@@ -1,0 +1,51 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "smart lens case",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "WhereIntent",
+                    "slots": [],
+                    "samples": [
+                        "where is it",
+                        "where is my contact lens",
+                        "find my smart lens case"
+                    ]
+                },
+                {
+                    "name": "SoundIntent",
+                    "slots": [],
+                    "samples": [
+                        "beep",
+                        "turn on the beeper"
+                    ]
+                },
+                {
+                    "name": "LightIntent",
+                    "slots": [],
+                    "samples": [
+                        "light it up",
+                        "turn on the LED"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                }
+            ],
+            "types": []
+        }
+    }
+}
