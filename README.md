@@ -148,3 +148,89 @@ We have Buzzer on D8, button on D7 and Chain able LED on D5.
 
 ## Setup Alexa Skill Kit
 
+With the Amazon Developer account you used in previously handy, you can create your Alexa skill. This skill will react to voice commands and direct the way your robot should move, using commands like, "where is my contact lens”, “locate smart lens case”, “light up the smart lens case”, and more!
+
+While the code for your gadget is written in Python 3, the code for your skill is written in Node.js in order to take advantage of the Alexa-hosted option for your Skill.
+
+1. Sign in to developer.amazon.com.
+
+2. In the top header, hover over Alexa, and click on Alexa Skills Kit.
+
+>![Alexa Skill Kit 1](./docs/_static/images/alexa-skill-kit-1.png)
+
+3. In the upper-right of the screen, click on Create Skill.
+
+>![Alexa Skill Kit 2](./docs/_static/images/alexa-skill-kit-2.png)
+
+4. Enter a Skill Name, “smart lens case”. The name you give your Skill will also be the way you open the Skill. For example, “Alexa, open smart lens case, or, “Alexa, tell smart lens case to light up the case”. You can modify this later.
+
+>![Alexa Skill Kit 3](./docs/_static/images/alexa-skill-kit-3.png)
+
+5. Select your default language. Make sure the language select matches the language used on your Echo device.
+
+6. Select Custom for the “Choose a model to add to your skill” option.
+
+>![Alexa Skill Kit 4](./docs/_static/images/alexa-skill-kit-4.png)
+
+7. Select Alexa-Hosted for the “Choose a method to host your skill's backend resources” option.
+
+>![Alexa Skill Kit 5](./docs/_static/images/alexa-skill-kit-5.png)
+
+8. Click Create skill in the upper-right.
+
+>![Alexa Skill Kit 6](./docs/_static/images/alexa-skill-kit-6.png)
+
+9. Once you click Create skill, you will see a modal while your skill is being prepared to be customized.
+
+## Enable the Custom Interface Controller
+The Custom Interface Controller allows you to send custom commands to your EV3Brick (Custom Directives), and receive events from your EV3 Brick (Custom Events). For this mission, you will need to enable the Custom Interface Controller, so you can use Custom Directives:
+
+
+1. Click on Interfaces in the left navigation of the Alexa Developer Console.
+
+2. Toggle Custom Interface Controller to ON.
+
+>![Alexa Skill Kit 7](./docs/_static/images/alexa-skill-kit-7.png)
+
+3. Scroll to the top of the page and click Save Interfaces
+
+>![Alexa Skill Kit 8](./docs/_static/images/alexa-skill-kit-8.png)
+
+Define the Skill Interaction Model
+The Skill Interaction Model defines how you can speak to your skill, and what kind of commands it can expect to respond to. The interaction model includes intents, slots, sample utterances that you define, and program against in your skill’s code. Learn more about the Skill Interaction Model.
+
+1. In the Alexa Developer Console, under Interaction Model, click on JSON Editor.
+
+>![Alexa Skill Kit 9](./docs/_static/images/alexa-skill-kit-9.png)
+
+2. Find skill-nodejs in source code. Within that folder, there is a model.json file. Copy the interaction model JSON from that file, and paste it into the editor, or drag and drop the JSON file onto the drop zone to upload it.
+
+>![Alexa Skill Kit 10](./docs/_static/images/alexa-skill-kit-10.png)
+
+After pasting the JSON into the Alexa skill JSON Editor, click Save Model, and then Build Model presented at the top of the console interface. 
+
+## Implementing the Skill Logic
+There’s a lot to learn about creating skills, but for the purpose of this mission, we’ll guide you through using the Alexa-Hosted skill option you selected earlier, and share additional resources at the end. With an Alexa-Hosted skill, you can start writing code for your skill directly in the Alexa Developer Console:
+
+1. Click on Code in the top navigation bar of the Alexa Developer Console.
+>![Alexa Skill Kit 11](./docs/_static/images/alexa-skill-kit-11.png)
+
+2. In our source code, open the index.js file in the mission-03/skill-nodejs/lambda folder.
+
+3. Copy the code in the index.js file into the index.js file in the Alexa Developer Console Code Editor.
+
+4. Copy the contents of the package.json and util.js, common.js files to the respective files in the Alexa Skill Code Editor.
+
+>![Alexa Skill Kit 12](./docs/_static/images/alexa-skill-kit-12.png)
+
+5. Click Deploy in the upper-right of the Alexa Skill Code Editor. Wait for the deployment process to complete.
+
+>![Alexa Skill Kit 13](./docs/_static/images/alexa-skill-kit-13.png)
+
+6. In the top navigation bar of the Alexa Developer Console, click on Test.  Switch the testing from Off to Development using the dropdown under the navigation bar.
+
+>![Alexa Skill Kit 14](./docs/_static/images/alexa-skill-kit-14.png)
+
+7. Now you can open up your Pi and test it through, you can test by saying "Alexa, open smart lens case"
+
+>![Alexa Skill Kit 14](./docs/_static/images/alexa-skill-kit-15.png)
