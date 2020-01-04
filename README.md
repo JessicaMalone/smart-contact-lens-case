@@ -1,14 +1,15 @@
 # smart-contact-lens-case
 ![Prototype](./docs/_static/images/75614408_690960174771936_8153552063456870400_n.gif)
 
-75614408_690960174771936_8153552063456870400_n.gif
+A demo youtube video can be seen at https://www.youtube.com/watch?v=yN9hZuQwTws
 
 Quickly create an Alexa Gadget using a Raspberry Pi, Python, and the [Alexa Gadgets Toolkit](https://developer.amazon.com/alexa/alexa-gadgets).
 
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Registering a gadget in the AVS Developer Console](#registering-a-gadget-in-the-alexa-voice-service-developer-console)
-- [Install GrovePi library](#Iinstall-grovepi-library)
+- [Install GrovePi library](#install-grovepi-library)
+- [Setup Alexa Skill Kit](#setup-alexa-skill-kit)
 
 ## Prerequisites
 
@@ -145,4 +146,5 @@ The old guide on getting started with the GrovePi can be found [here](http://www
 We have Buzzer on D8, button on D7 and Chain able LED on D5. 
 ![Picture](./docs/_static/images/grove_pi_connection.jpg)
 
+## Setup Alexa Skill Kit
 
