@@ -28,16 +28,15 @@
                     "name": "SoundIntent",
                     "slots": [],
                     "samples": [
-                        "beep",
-                        "turn on the beeper"
+                        "locate smart lens case"
                     ]
                 },
                 {
                     "name": "LightIntent",
                     "slots": [],
                     "samples": [
-                        "light it up",
-                        "turn on the LED"
+                        "light up the smart lens case",
+                        "turn on the smart lens case light"
                     ]
                 },
                 {
