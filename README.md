@@ -1,4 +1,8 @@
 # smart-contact-lens-case
+![Prototype](./docs/_static/images/75614408_690960174771936_8153552063456870400_n.gif)
+
+75614408_690960174771936_8153552063456870400_n.gif
+
 Quickly create an Alexa Gadget using a Raspberry Pi, Python, and the [Alexa Gadgets Toolkit](https://developer.amazon.com/alexa/alexa-gadgets).
 
 - [Prerequisites](#prerequisites)
